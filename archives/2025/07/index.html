@@ -2091,7 +2091,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1752790865419),
+    lastupdate: new Date(1752799496023),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2099,7 +2099,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       fancybox_js: 'https://unpkg.com/@fancyapps/ui@5.0.36/dist/fancybox/fancybox.umd.js'
     },
     sidebar: {
-      for_page: ["blogger","category","tagcloud","donate"],
+      for_page: ["blogger","category","tagcloud","donate","text"],
       for_post: ["toc"],
       webinfo: {
         lastupd: {
@@ -2622,12 +2622,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://unpkg.com/volantis-static@0.0.1660614606622/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+          <img no-lazy src='https://raw.githubusercontent.com/SMQ-freedom/Q-freedom/main/20250718061509166.png'/>
         </a>
       
     
     
       <div class='text'>
+        
+          <h2>孙思邈</h2>
         
         
         
@@ -2649,7 +2651,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <a href="mailto:me@xxx.com"
+            <a href="mailto:SUNMQ1@qq.com"
               class="social fa-solid fa-envelope flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
@@ -2658,17 +2660,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <a href="https://github.com/volantis-x/"
+            <a href="https://github.com/SMQ-freedom/"
               class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
               target="_blank"
               rel="external nofollow noopener noreferrer">
               
@@ -2716,6 +2709,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
 
+  
+    
+    
+      
+<section class="widget text desktop">
+  
+  <header>
+    
+      <a target="_blank" rel="noopener" href='https://github.com/SMQ-freedom/'><i class="fab fa-github fa-fw" aria-hidden="true"></i><span class='name'>点个赞吧</span></a>
+    
+  </header>
+
+
+  <div class='content'>
+    
+      <p>您的赞对我来说很重要，如果您喜欢本主题，希望能够给下面的项目点个赞来支持一下。</p>
+
+    
+  </div>
+</section>
+
+    
+  
+
 
 <div class="widget-sticky">
 
@@ -2755,7 +2772,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
           
             
-              <a href="mailto:me@SUNMQ1@qq.com"
+              <a href="mailto:SUNMQ1@qq.com"
                 class="social fas fa-envelope flat-btn"
                 target="_blank"
                 rel="external nofollow noopener noreferrer" itemprop="url">
@@ -2939,7 +2956,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   function p_giscus() {
     const HEAD = check_giscus();
     if (!HEAD) return;
-    let cfg = Object.assign({"theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
+    let cfg = Object.assign({"repo":"SMQ-freedom/comments","repo-id":"R_kgDOPObacQ","category":"Announcements","category-id":"Announcements","mapping":"pathname","reactions-enabled":"1","emit-metadata":"0","lang":"zh-CN","theme":{"light":"light","dark":"dark"}},pdata.commentConfig)
     const script = document.createElement('script');
     script.setAttribute('src', 'https://giscus.app/client.js');
     Object.keys(cfg).forEach(k=>{
