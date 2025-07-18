@@ -2093,7 +2093,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     root: '/',
     debug: "env",
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1660614606622/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1752813537906),
+    lastupdate: new Date(1752865493104),
     cdn: {
       izitoast_css: 'https://unpkg.com/izitoast@1.4.0/dist/css/iziToast.min.css',
       izitoast_js: 'https://unpkg.com/izitoast@1.4.0/dist/js/iziToast.min.js',
@@ -2149,6 +2149,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <!-- import body_begin end-->
     <!-- Custom Files bodyBegin begin-->
     
+    <link rel="stylesheet" href="/dist/APlayer.min.css">
+    <div id="aplayer"></div>
+    <script type="text/javascript" src="/dist/APlayer.min.js"></script>
+    <script type="text/javascript" src="/js/diy/music.js"></script>
     <!-- Custom Files bodyBegin end-->
         <header itemscope itemtype="https://schema.org.cn/WPHeader" id="l_header" class="l_header auto shadow floatable blur show" style='opacity: 0' >
   <div class='container'>
@@ -2302,18 +2306,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
             
             
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/source/music/%E9%BD%90%E7%A5%8E%E6%9E%AB%20-%20%E7%9F%A5%E6%88%91%20(remix).flac/" title="背景音乐"
-                  
-                  
-                  
-                    active-action="action-sourcemusicE9BD90E7A58EE69EAB20-20E79FA5E6889120(remix)flac"
-                  >
-                  <i class='fa-solid fa-compact-disc fa-fw'></i>背景音乐
-                </a>
-                
-              </li>
+              
+                <li>
+                  <a class="menuitem flat-box">
+                    <i class='fa-solid fa-compact-disc fa-fw music'></i>背景音乐
+                  </a>
+                  <ul class="list-v">
+                    <li>
+                      <div class="aplayer-container">
+                        
+
+
+                      </div>
+                    </li>
+                  </ul>
+                <li>
+              
             
           
           
@@ -2457,18 +2465,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               
             
-              <li>
-                <a class="menuitem flat-box faa-parent animated-hover"
-                href="/source/music/%E9%BD%90%E7%A5%8E%E6%9E%AB%20-%20%E7%9F%A5%E6%88%91%20(remix).flac/" title="背景音乐"
-                  
-                  
-                  
-                    active-action="action-sourcemusicE9BD90E7A58EE69EAB20-20E79FA5E6889120(remix)flac"
-                  >
-                  <i class='fa-solid fa-compact-disc fa-fw'></i>背景音乐
-                </a>
-                
-              </li>
+              
             
           
             
